@@ -1,4 +1,5 @@
 type: test.test
+slug: test
 name: test contract
 version: '1.0.0'
 aliases: []
