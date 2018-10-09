@@ -1,0 +1,40 @@
+slug: resin-api
+version: 3.0.10
+type: sw.containerized-application
+assets:
+  image:
+    url: 'resin/resin-api:v8.15.0'
+  repo:
+    url: github.com/resin-io/resin-api
+capabilities:
+  - type: sw.odata-interface
+    slug: resin-core-api
+    version: 5.0.0
+  - type: sw.odata-interface
+    slug: resin-core-api
+    version: 4.0.0
+  - type: sw.odata-interface
+    slug: resin-core-api
+    version: 3.0.0
+  - type: sw.odata-interface
+    slug: resin-core-api
+    version: 2.0.0
+  - type: sw.odata-interface
+    slug: resin-core-api
+    version: 1.0.0
+  - type: sw.odata-interface
+    slug: resin-core-api
+    version: 0.0.1
+  - type: sw.http-interface
+    slug: resin-device-state
+    version: 2.0.0
+  - type: sw.http-interface
+    slug: resin-device-state
+    version: 1.0.0
+requires:
+  - type: sw.sql-interface
+    slug: postgre-db
+    version: '>=1.0.0'
+  - type: sw.tcp-interface
+    slug: redis-api
+    version: '>=1.0.0'
