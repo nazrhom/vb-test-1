@@ -1,0 +1,16 @@
+slug: resin-builder
+version: 3.0.12
+type: sw.containerized-application
+assets:
+  image:
+    url: 'resin/resin-builder:v4.14.3'
+  repo:
+    url: github.com/resin-io/resin-builder
+requires:
+  - type: sw.odata-interface
+    slug: resin-core-api
+    version: '>=5.0.0'
+capabilities:
+  - type: sw.build-endpoint
+    slug: resin-build-endpoint
+    version: 3.0.0
